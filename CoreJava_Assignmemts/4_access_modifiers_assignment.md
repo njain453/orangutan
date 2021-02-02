@@ -15,7 +15,7 @@ class Test
      System.out.println(obj2.i);
   } 
 } 
-class Test1
+ Test1
 {
    static int i=0;
    public void increment()
