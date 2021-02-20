@@ -175,6 +175,60 @@ List of ArrayList Values in descending order are
 
 #### 5) Write a Java program to insert 8, 15,11, 3, 2 in a ArrayList and display the whole ArrayList in descending order using descending iterator.
 
+```java
+package com.examples.collection.day23;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+/*
+Write a Java program to insert 8, 15,11, 3, 2 in a ArrayList and display the whole ArrayList in descending order using descending iterator.
+ */
+public class Test {
+
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> aList = new ArrayList<>();
+
+
+        aList.add(8);
+        aList.add(15);
+        aList.add(11);
+        aList.add(3);
+        aList.add(2);
+
+        LinkedList<Integer> lList = new LinkedList<>(aList);
+
+        Iterator i1 = lList.descendingIterator();
+      
+
+        int sizeOfaList = aList.size();
+
+        while (i1.hasNext() && sizeOfaList > 0) {
+            System.out.println(i1.next());
+            sizeOfaList--;
+
+        }
+
+
+    }
+
+
+}
+```
+
+```
+Since Only LinkedList have got descending iterator method so I am using linkedList iterator for traversing elements in descending ordet. 
+Also, LinkedList have no fixed size so we have to use size method for looping. 
+2
+3
+11
+15
+8
+```
+
 #### 6) Write a Java program to insert 8, 15,11, 3, 2 in a ArrayList and display the whole ArrayList. Now add 9 to the first position of the list. Add 6 at the last position of the list.
 
 ```java
