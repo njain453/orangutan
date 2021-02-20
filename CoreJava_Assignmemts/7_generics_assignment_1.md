@@ -88,7 +88,7 @@ public class App<x,y> {
 
          if (var1 instanceof String && var2 instanceof String) {
 
-             System.out.println( var1.toString()  +  var2.toString() );
+             System.out.println( var1.toString()  +  var2.toString() ); // for normal methods, we can just add String1 and String2 but for generics it wont work.
          }
 
     }

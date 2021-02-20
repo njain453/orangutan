@@ -12,7 +12,7 @@ abstract class Test {
    public abstract void changeColor(); 
 }
 ```
-// Nothing since no main. Abstract class can have Abstract and Non abstract variable and methods. 
+// Nothing since no main. Abstract class can have Abstract and non abstract methods. 
 
 2. Is there any compile error in below code ? Why ?
 
@@ -26,7 +26,7 @@ class Test {
 }
 ```
 
-Nope, Abstract class can have Abstract and Non abstract variable and methods.
+Nope, Abstract class can have Abstract and Non abstract methods.
 
 
 3) Is there any compile error in below code ? If yes, then why ? If not, then why not ?
@@ -239,8 +239,8 @@ Some other text...
 12. List down differences between following with examples- a) An interface and abstract. b) An interface and extends.
     
 ```
-a) A class can implement multiple interfaces but can extend only one Abstract class
-b) An interface is completely Abstract class and extend is usd for extedning Abstract clas but not interface. 
+a) A class can implement multiple interfaces but can extend only  one Abstract class or one normal class.
+b) We use implements  keyword with Interface and extend keyword with Abstract class.
 
 ```
 
