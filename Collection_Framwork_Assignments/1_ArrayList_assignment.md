@@ -402,7 +402,7 @@ public class Test {
         // Performing operation on List
 
          ArrayList<Integer> obj2 = new ArrayList<>(obj1);  // copy list at time of creation of new list. 
-
+         // obj2.addAll(obj1);// This is another way to copy  Arraylist from one object to another. 
 
         System.out.println("Values of Second ArrayList is ");
 
