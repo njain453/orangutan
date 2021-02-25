@@ -116,84 +116,95 @@ public class App {
 #### 4.Write a Java program to insert 8, 15,11, 3, 2 in a vector and display the whole vector in descending order.
 
 ```java
+package com.examples.collection.assignment;
+
 /*
 Write a Java program to insert 8, 15,11, 3, 2 in a vector and display the whole vector in descending order.
  */
 
-package com.examples.collection.day23;
-
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Vector;
- 
-public class App {
 
-    static Vector<Integer> vector1 = new Vector<>();
+public class App4 {
+
+    static Vector<Integer> vc = new Vector<>();
 
     public static void main(String[] args) {
 
-        vector1.addElement(8);
-        vector1.addElement(15);
-        vector1.addElement(11);
-        vector1.addElement(3);
-        vector1.addElement(2);
+        vc.addElement(8);
+        vc.addElement(15);
+        vc.addElement(11);
+        vc.addElement(3);
+        vc.addElement(2);
+        System.out.println(vc);
+        
+        Collections.sort(vc, new Customcomparator());
 
-       Collections.reverse(vector1);
-        System.out.println(vector1);
-
-
+        System.out.println(vc);
 
     }
 }
 
+class Customcomparator implements Comparator<Integer>{
+
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2- o1;
+    }
+}
+
+
 ```
 ```
-[2, 3, 11, 15, 8]
+[8, 15, 11, 3, 2]
+[15, 11, 8, 3, 2]
 ```
 
 #### 5.  Write a Java program to insert 8, 15,11, 3, 2 in a vector and display the whole vector in descending order using descending iterator.
 
 ```java
+package com.examples.collection.assignment;
+
 /*
 Write a Java program to insert 8, 15,11, 3, 2 in a vector and display the whole vector in descending order using descending iterator.
  */
 
-package com.examples.collection.day23;
+import java.util.*;
 
- 
-import java.util.Iterator;
-import java.util.LinkedList;
+public class App4 {
 
-
-public class App {
-
-    static LinkedList<Integer> lList = new LinkedList<>();
+    static Vector<Integer> vc = new Vector<>();
 
     public static void main(String[] args) {
 
-        lList.add(8);
-        lList.add(15);
-        lList.add(11);
-        lList.add(3);
-        lList.add(2);
+        vc.addElement(8);
+        vc.addElement(15);
+        vc.addElement(11);
+        vc.addElement(3);
+        vc.addElement(2);
 
-        Iterator i = lList.descendingIterator();
+        System.out.println("Original Vector is" + vc);
 
-        while (i.hasNext()) {
+        LinkedList<Integer> llist = new LinkedList<>(vc);
 
+        Iterator i = llist.descendingIterator();
+        while (i.hasNext()){
             System.out.println(i.next());
         }
-
-
-
 
 
 
     }
 }
 
+
+
+
 ```
 ```
+Original Vector is[8, 15, 11, 3, 2]
 2
 3
 11
@@ -426,44 +437,48 @@ public class App {
 ####  11) Write a Java program to insert 8, 15,11, 3, 2 in a vector and display the whole vector. Now create a new vector and copy the previous vector in descending order into it and display the new vector.
 
 ```java
-package com.examples.collection.day23;
+package com.examples.collection.assignment;
+
 /*
 11) Write a Java program to insert 8, 15,11, 3, 2 in a vector and display the whole vector. Now create a new vector and copy the previous vector in descending order into it and display the new vector.
-
  */
 
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Vector;
-public class App {
+
+public class App4 {
+
+    static Vector<Integer> vc1 = new Vector<>();
 
     public static void main(String[] args) {
-        Vector<Integer> vector1 = new Vector<>();
 
+        vc1.addElement(8);
+        vc1.addElement(15);
+        vc1.addElement(11);
+        vc1.addElement(3);
+        vc1.addElement(2);
+        System.out.println(vc1);
 
-        vector1.add(8);
-        vector1.add(15);
-        vector1.add(11);
-        vector1.add(3);
-        vector1.add(2);
+        Collections.sort(vc1, new Customcomparator());
 
-        System.out.println(vector1);
-        Vector<Integer> vector3 = new Vector<Integer>(vector1);
+        Vector<Integer> vc2 = new Vector<>(vc1);
 
-        Collections.reverse(vector1); // here descending order is for order of insertion of elements to the list.
-        Vector<Integer> vector2 = new Vector<>(vector1);
-        System.out.println(vector2);
+        System.out.println(vc2);
 
-
-        vector3.sort(Comparator.reverseOrder());// here actual elements in the list will be sorted in descending order
-        System.out.println(vector3);
-        
     }
 }
 
+class Customcomparator implements Comparator<Integer>{
+
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2- o1;
+    }
+}
 ```
 ```
 [8, 15, 11, 3, 2]
-[2, 3, 11, 15, 8]
 [15, 11, 8, 3, 2]
 ```
