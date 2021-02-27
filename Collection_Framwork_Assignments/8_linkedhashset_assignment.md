@@ -530,7 +530,7 @@ New LinkedHashSet Elements are :
 15
 ```
 
-####  
+####  11) Write a Java program to insert 8, 15,11, 3, 2 in a linkedhashset and display the whole linkedhashset. Now create a new linkedhashset and copy the previous linkedhashset in descending order into it and display the new linkedhashset.
 
 ```java
 package com.examples.collection.assignment;
