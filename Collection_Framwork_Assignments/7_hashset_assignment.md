@@ -209,7 +209,7 @@ public class App2 {
 
         Iterator i = llist.descendingIterator();
         while (i.hasNext()){
-            System.out.println(i.next());
+            System.out.println(i.next()); // note that in hashset order is random.
         }
 
     }
@@ -307,7 +307,7 @@ public class App2 {
 
         Iterator i = llist.iterator();
         while (i.hasNext()){
-            System.out.println(i.next());
+            System.out.println(i.next()); // hashset order is random only.
         }
 
     }
@@ -403,7 +403,7 @@ public class App2 {
 
         Iterator i = hs2.iterator();
         while (i.hasNext()){
-            System.out.println(i.next());
+            System.out.println(i.next()); //note that hashset order is random only.
         }
 
     }
@@ -484,7 +484,7 @@ package com.examples.collection.assignment;
 
 import java.util.*;
 
-public class App2 {
+public class App {
 
     public static void main(String[] args) {
         HashSet<Integer> hs = new HashSet<>();
@@ -503,9 +503,10 @@ public class App2 {
 
         System.out.println("List in descending order " + llist);
 
-        HashSet<Integer> hs2 = new HashSet<>(llist);
+        //HashSet<Integer> hs2 = new HashSet<>(llist);
+        //Hashset order is random so we can display directly from list. 
 
-        Iterator i = hs2.iterator();
+        Iterator i = llist.iterator();
         while (i.hasNext()){
             System.out.println(i.next());
         }
@@ -520,16 +521,16 @@ class Customcomparator implements Comparator<Integer> {
         return o2 -o1;
     }
 }
+
 ```
 
 ```
-Original hashset elements are [2, 3, 8, 11, 15]
 List in descending order [15, 11, 8, 3, 2]
-2
-3
-8
-11
 15
+11
+8
+3
+2
 ```
 
 

@@ -268,7 +268,7 @@ public class App {
 
 
         System.out.println("Elements after Operations are :");
-        Iterator i = llist.descendingIterator();
+        Iterator i = llist.iterator();
         while ((i.hasNext())){
             System.out.println(i.next());
         }
@@ -283,13 +283,13 @@ public class App {
 ```
 Original TreeSet elements are[2, 3, 8, 11, 15]
 Elements after Operations are :
-6
-15
-11
-8
-3
-2
 9
+2
+3
+8
+11
+15
+6
 ```
 
 
@@ -320,11 +320,11 @@ public class App {
 
         LinkedList<Integer> llist = new LinkedList<>(ts);
         llist.add(3,7);
-   
+
 
 
         System.out.println("Elements after Operations are :");
-        Iterator i = llist.descendingIterator();
+        Iterator i = llist.iterator();
         while ((i.hasNext())){
             System.out.println(i.next());
         }
@@ -339,12 +339,12 @@ public class App {
 ```
 Original TreeSet elements are[2, 3, 8, 11, 15]
 Elements after Operations are :
-15
-11
-7
-8
-3
 2
+3
+8
+7
+11
+15
 ```
 
 
@@ -379,7 +379,7 @@ public class App {
 
 
         System.out.println("Elements after Operations are :");
-        Iterator i = llist.descendingIterator();
+        Iterator i = llist.iterator();
         while ((i.hasNext())){
             System.out.println(i.next());
         }
@@ -392,10 +392,10 @@ public class App {
 ```
 Original TreeSet elements are[2, 3, 8, 11, 15]
 Elements after Operations are :
-15
-11
-3
 2
+3
+11
+15
 ```
 
 
@@ -535,11 +535,11 @@ public class App {
         Collections.sort(llist, new CustomComparator());
 
         System.out.println("Sorted LinkedList elements are" + llist);
-        TreeSet<Integer> ts2 = new TreeSet<>(llist);
+
 
 
         System.out.println("New TreeSet Elements are :");
-        Iterator i = ts2.iterator();
+        Iterator i = llist.iterator();
         while ((i.hasNext())){
             System.out.println(i.next());  // it will print in ascending order only since by default tree set elements aer sorted in ascending order only.
         }
@@ -562,9 +562,9 @@ class CustomComparator implements Comparator<Integer>{
 Original TreeSet elements are[2, 3, 8, 11, 15]
 Sorted LinkedList elements are[15, 11, 8, 3, 2]
 New TreeSet Elements are :
-2
-3
-8
-11
 15
+11
+8
+3
+2
 ```
