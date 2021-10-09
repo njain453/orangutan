@@ -1,4 +1,4 @@
-package collections.main.java.corejava.example_abstract;
+package collections.main.java.corejava.example_abstract.one;
 
 public class Camera extends Machine {
  
