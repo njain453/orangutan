@@ -32,19 +32,19 @@
 # JAVA_EXAMPLES
 
 #### abstract class object cannot be created
-[click here for code example][1]
+[click here for code example][6]
 
-[1]:src/main/java/collections/main/java/corejava/example_abstract/two/App.java
+[6]:src/main/java/collections/main/java/corejava/example_abstract/two/App.java
 
 #### Java Program to Get System IP Address in Windows and Linux Machine
-[click here for code example][1]
+[click here for code example][7]
 
-[1]:src/main/java/examples/others/one/App.java
+[7]:src/main/java/examples/others/one/App.java
 
 #### How to convert hashmap to JSON object in Java
-[click here for code example][1]
+[click here for code example][8]
 
-[1]:src/main/java/examples/others/two/ConvertToJson.java
+[8]:src/main/java/examples/others/two/ConvertToJson.java
 
 #### 
 
@@ -52,14 +52,21 @@
 
 ## lambda Expression: 
 
-#### Use a lamba expression in the ArrayList's forEach() method to print every item in the list:
-[click here for code example][1]
+#### Use a lambda expression in the ArrayList's forEach() method to print every item in the list:
+[click here for code example][9]
 
-[1]:src/main/java/examples/java8/lambda/one/App2.java
+[9]:src/main/java/examples/java8/lambda/one/App2.java
 
-####  
+####  Java Lambda Expression Example with Functional Interface: No Parameter
+[click here for code example][10]
 
-####
+[10]:src/main/java/examples/java8/lambda/one/App.java
+
+
+#### 123
+
+[click here for code example](src/main/java/examples/practice/App1.java)
+
 
 ####
 

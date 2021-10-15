@@ -6,7 +6,7 @@ package examples.java8.lambda.one;/**
 
 /**
  What this program snippet doing?
- Java Lambda Expression Example: No Parameter
+ Java Lambda Expression Example with Functional Interface: No Parameter
  **/
 
 @FunctionalInterface
