@@ -25,9 +25,16 @@ src/main/java/examples/others/one/App.java
 src/main/java/examples/others/two/ConvertToJson.java
 #### 
 
-####
+# Java8
 
-####
+## lambda Expression: 
+
+#### Use a lamba expression in the ArrayList's forEach() method to print every item in the list:
+[click here for code example][1]
+
+[1]:src/main/java/examples/java8/lambda/one/App2.java
+
+####  
 
 ####
 
