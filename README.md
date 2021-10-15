@@ -6,27 +6,27 @@
 [1]:Collection_Framwork_Assignments
 
 ## CoreJava_Assignmemts(Amey)
-[click here for code examples][1]
+[click here for code examples][2]
 
-[1]:CoreJava_Assignmemts
+[2]:CoreJava_Assignmemts
  
 
 ## Spring_Assignments(Amey)
-[click here for code examples][1]
+[click here for code examples][3]
 
-[1]:Spring_Assignments
+[3]:Spring_Assignments
  
 
 ## SpringMVC_Assignments(Amey)
-[click here for code examples][1]
+[click here for code examples][4]
 
-[1]:SpringMVC_Assignments
+[4]:SpringMVC_Assignments
   
 
 ## Spring_Practice
-[click here for code examples][1]
+[click here for code examples][5]
 
-[1]:Spring_Practice
+[5]:Spring_Practice
  
 
 # JAVA_EXAMPLES
