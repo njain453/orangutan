@@ -1,4 +1,4 @@
-package examples.java8.lambda.one;/**
+package examples.java8.lambda.four;/**
  * @author : Nitin Jain
  * @mailto : official.nitinjain@gmail.com
  * @created : 10/15/2021, Friday
@@ -22,6 +22,8 @@ public class App2 {
         arrayList.forEach((n) -> {
                                    System.out.println(n);     // lambda expression: parameter -> expression
                                  });
+
+       // arrayList.forEach();
     }
 
 

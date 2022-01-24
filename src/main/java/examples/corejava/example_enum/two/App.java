@@ -1,21 +1,20 @@
-package examples.corejava.example_enum;
+package examples.corejava.example_enum.two;
 
-// declared enum inside class
+//declare enum outside class
 
-public class Test {
-
-    enum Color1 {
-        RED , GREEN, BLACK, WHITE
-    }
-
-    public static void main(String[] args) {
-        Color1 c1 = Color1.RED;
-        System.out.println(c1);
-
-    }
-
+enum Color{
+    RED, BROWN, GREEN, WHITE
 }
-// Every enum internall implemented using class
+
+public class App {
+    public static void main(String[] args) {
+        Color c1 = Color.RED;
+        System.out.println(c1);
+        System.out.println(c1.getClass());  // enum Color is converted to class Color
+    }
+}
+
+// Every enum internally implemented using class
 /* internally above enum Color is converted to
 class Color
 {
