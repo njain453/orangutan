@@ -11,6 +11,7 @@ public class App {
         Color c1 = Color.RED;
         System.out.println(c1);
         System.out.println(c1.getClass());  // enum Color is converted to class Color
+
     }
 }
 
