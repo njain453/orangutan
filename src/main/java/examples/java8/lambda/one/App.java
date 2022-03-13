@@ -28,7 +28,7 @@ public class App  {
     }
 
     public static void main(String[] args) {
-        Sayable sayable = new App();
+        Sayable sayable = new MyApp();
         sayable.say();    //  this call will print:  I have nothing to Say
     }
 
