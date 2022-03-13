@@ -23,7 +23,7 @@ public class App {
     }
 
     // Another method where we are passing Info object.Since object cannot be created for Interface so it will by default point to object of implementing class.
-    // method is static since there is no MyApp object defined
+    // method is static since there is no MyApp1 object defined
 
     private static void outputInfo(Info info) {
         info.showInfo();  // implementing class object can call inherited methods.

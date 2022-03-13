@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
 
         System.out.println(App.str); // static variable directly referenced by class name.
-        App obj1 = new App(); // created object  of MyApp class
+        App obj1 = new App(); // created object  of MyApp1 class
         System.out.println(obj1.toString()); // will print object reference address
         System.out.println(obj1.str); // to print static variable value using object of this class
         System.out.println(obj1.str.length()); // will print length of variable value.

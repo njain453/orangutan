@@ -14,7 +14,7 @@ import java.io.FileNotFoundException;
 
 /**
  What this program snippet doing?
- // In this Java program, we accepts a file or directory name from
+ // In this Java program, we accept a file or directory name from
  // command line arguments. Then the program will check if
  // that file or directory physically exist or not and
  // it displays the property of that file or directory.
@@ -25,7 +25,7 @@ public class MyApp {
 
     public static void main(String[] args)  {
 
-        Logger logger = LoggerFactory.getLogger(MyApp.class);
+
         File file = new File(args[0]);
 
         //get file path
