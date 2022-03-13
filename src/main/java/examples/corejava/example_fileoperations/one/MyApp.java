@@ -30,7 +30,7 @@ public class MyApp {
 
         //get file path
         System.out.println("File Absolute Path is " + file.getAbsolutePath());
-        System.out.println("File path is" + file.getPath());
+        System.out.println("File path is " + file.getPath());
 
         //get File Name
         System.out.println("file name is " + file.getName());
